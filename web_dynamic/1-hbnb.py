@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 @app.teardown_appcontext
 def close_db(error):
-    """ Remove the current SQLAlchemy Session """
+    """ Remove the current SQLAlchemy Session"""
     storage.close()
 
 
